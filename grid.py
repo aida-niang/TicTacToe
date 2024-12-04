@@ -1,15 +1,10 @@
-grid = range(9) #grille avec chiffres
+grid = range(9)
 
-def display_grid(grid):
-    #Affiche la grille du jeu.
+def display_grid(grid):  #Affiche la grille du jeu.
     print("\n")
     for i in range(0, 9, 3):
-        print(f" {grid[i]} | {grid[i + 1]} | {grid[i + 2]} ")
+        print(f" {grid[i]}  |  {grid[i + 1]}  |  {grid[i + 2]} ")
         if i < 6:
-            print("---|---|---")
+            print("----|-----|----")
     print("\n")
-
-
-
-
 
