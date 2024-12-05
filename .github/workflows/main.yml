@@ -13,8 +13,6 @@ jobs:
     - name: Envoyer une notification Google Chat
       uses: Co-qn/google-chat-notification@releases/v1
       with:
-        toto: 'coucou'
-        test : "est ce que ça marche"
         name: "TicTacToe"
         url: "https://chat.googleapis.com/v1/spaces/XXXXX/messages?key=XXXX&token=XXXX"
         status: ${{ job.status }}
