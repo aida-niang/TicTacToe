@@ -43,3 +43,4 @@ def ia_kea(grid, mark, difficulty): #IA KEA : joue soit aléatoirement (facile) 
         # Étape 4 : Jouer dans une case vide restante
         return next(i for i in range(9) if isinstance(grid[i], int))
     
+#git
