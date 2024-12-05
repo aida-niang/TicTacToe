@@ -2,11 +2,11 @@ import random
 
 def ia_kea(grid, mark, difficulty): #IA KEA : joue soit aléatoirement (facile) soit de manière stratégique (difficile).
 
-    opponent = "❤️" if mark == "★" else "★" #Permet à KEA d'identifier son adversaire
-    if mark == "★" :
+ #Permet à KEA d'identifier son adversaire
+    if mark == "☀️" :
         opponent = "❤️"
     else :
-        opponent = "★"
+        opponent = "☀️"
         
     winning_combination = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Lignes

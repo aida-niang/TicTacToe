@@ -18,7 +18,7 @@ def main():
         while any(isinstance(x, int) for x in grid):  # Continue tant qu'il reste des cases avec numéro
             # Déterminer le joueur actuel et son symbole
             actual_player = player1 if round % 2 == 0 else player2
-            mark = "❤️" if round % 2 == 0 else "★"
+            mark = "☀️" if round % 2 == 0 else "❤️"
 
             # Obtenir la position choisie
             position = play(actual_player, mark, grid, difficulty)

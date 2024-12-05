@@ -30,10 +30,10 @@ def ask_player_number(): #Demande le nombre de joueurs, leurs prénoms et la dif
 
 def play(player, mark, grid, difficulty=None): #Gère le tour d'un joueur (humain ou IA).
     if player == "KEA":
-        print(f"C'est au tour de KEA ({mark}) :")
+        print(f"C'est au tour de KEA ({mark} ) :")
         return ia_kea(grid, mark, difficulty)
     else:
-        print(f"C'est au tour de {player} ({mark}) :")
+        print(f"C'est au tour de {player} ({mark} ) :")
         while True:
             try:
                 position = int(input("Choisissez une case (0-8) : "))
