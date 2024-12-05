@@ -1,0 +1,8 @@
+name: Google Chat Notification
+uses: Co-qn/google-chat-notification@releases/v1
+  with:
+      name: TicTacToe
+      url: https://chat.googleapis.com/v1/spaces/AAAAJ50uQO0/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=qYDjDL-AD_JqPAdmxRs18AigTLJbOn_E38UIYAycG-U
+      status: ${{ job.success}}
+  if: always()
+
