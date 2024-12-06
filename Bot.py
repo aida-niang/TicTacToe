@@ -3,11 +3,9 @@ import random
 def ia_kea(grid, mark, difficulty): #IA KEA : joue soit aléatoirement (facile) soit de manière stratégique (difficile).
 
  #Permet à KEA d'identifier son adversaire
-    if mark == "☀️" :
-        opponent = "❤️"
-    else :
+    if mark == "❤️" :
         opponent = "☀️"
-        
+
     winning_combination = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Lignes
         [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Colonnes
@@ -43,4 +41,3 @@ def ia_kea(grid, mark, difficulty): #IA KEA : joue soit aléatoirement (facile) 
         # Étape 4 : Jouer dans une case vide restante
         return next(i for i in range(9) if isinstance(grid[i], int))
     
-#git
